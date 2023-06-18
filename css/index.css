@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  background-color: hsl(225, 100%, 94%);
+}
+
+main {
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 33rem;
+  background-color: white;
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    max-width: 45rem;
+  }
+}
+
+.header-img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+@media only screen and (min-width: 1024px) {
+  .content {
+    padding: 45px;
+  }
+}
+
+.content h1 {
+  margin: 0 0 20px;
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+@media only screen and (min-width: 1024px) {
+  .content h1 {
+    font-size: 2.85rem;
+  }
+}
+
+.txt {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media only screen and (min-width: 1024px) {
+  .txt {
+    font-size: 1.7rem;
+  }
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  padding: 15px;
+  font-size: 1.4rem;
+  background-color: hsl(225, 100%, 98%);
+}
+@media only screen and (min-width: 1024px) {
+  .plan-container {
+    margin: 0 0 30px;
+    padding: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+.icon-plan {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-plan img {
+  width: 48px;
+  height: 48px;
+}
+
+.plan p:first-child {
+  margin: 0 0 5px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.change {
+  font-weight: 900;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+@media only screen and (min-width: 1024px) {
+  .change {
+    font-size: 1.4rem;
+  }
+  .change:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
+
+main button {
+  border: none;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  padding: 15px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 20px 10px hsl(245, 75%, 52%, 0.15);
+}
+@media only screen and (min-width: 1024px) {
+  main button {
+    margin: 0 0 30px;
+  }
+  main button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
+
+.cancel-order {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+@media only screen and (min-width: 1024px) {
+  .cancel-order:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+  }
+}
